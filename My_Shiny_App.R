@@ -1,5 +1,6 @@
 library(shiny)
 library(bslib)
+library(bsicons)
 
 # Define UI
 ui <- page_sidebar(
@@ -19,6 +20,13 @@ ui <- page_sidebar(
        examples, visit the Shiny homepage (https://shiny.posit.co).",
        
        card_footer("Shiny is a product of Posit.")
+  ),
+  
+  value_box(
+    title = "Value box",
+    value = 100,
+    showcase = bs_icon("bar-chart"),
+    theme = "teal"
   )
 )
 
